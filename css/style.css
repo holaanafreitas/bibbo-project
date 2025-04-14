@@ -1,0 +1,26 @@
+/* Main CSS style for the website */
+
+.Main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.Main-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.Item-grid {
+    transition: ease 1s;
+    color: var(--secundary-green);
+    opacity: .8; 
+}
+
+.Item-grid:hover {
+    color: var(--secundary-green);
+    opacity: 1;
+    scale: 1.05;
+}

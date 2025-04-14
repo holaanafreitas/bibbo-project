@@ -1,0 +1,17 @@
+.Main-about {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.Main-about img {
+    width: 300px;
+    border-radius: 300px;
+}
+
+h2 {
+    color: var(--light-blue);
+}
