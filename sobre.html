@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibbó Arquitetura</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon-32x32.png">
+
     <!-- style set ups's -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/styleSobre.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
 
@@ -17,16 +20,14 @@
 <body>
     <!-- HEADER of the project -->
     <header class="Header">
-        <div class="Header-logo">
-            <h1>bibbó.</h1>
-        </div>
+        <h1><a class="Header-logo" href="./index.html" onclick="">bibbó.</a></h1>
         <!-- nav/menu for the tablet and desktop size -->
         <nav class="Header-nav">
             <ul class="Nav-ul">
-                <li><a class="Nav-a" href="">portfólio</a></li>
-                <li><a class="Nav-a" href="">serviços</a></li>
-                <li><a class="Nav-a" href="">publicações</a></li>
-                <li><a class="Nav-a" href="">sobre</a></li>
+                <li><a class="Nav-a" href="./portfolio.html" target="_self">portfólio</a></li>
+                <li><a class="Nav-a" href="./servicos.html" target="_self">serviços</a></li>
+                <li><a class="Nav-a" href="./publicacoes.html" target="_self">publicações</a></li>
+                <li><a class="Nav-a" href="./sobre.html" target="_self">sobre</a></li>
             </ul>
         </nav>
 
@@ -40,7 +41,7 @@
     <!-- Content for  the MAIN page -->
     <main class="Main-about">
         <div>
-            <img src="./img/02_Bibbo/TamirisBibbo.png" alt="">
+            <img src="./img/02_Bibbo/TamirisBibbo.png" alt="Tamiris Bibbó" loading="lazy">
         </div>
         <div>
             <h2>Quem é Bibbó?</h2>
@@ -50,19 +51,28 @@
         </div>
     </main>
 
-    <!-- FOOTER of th project -->
-    <footer class="Footer">
-        <div class="Footer-logo">
-            <h1>bibbó.</h1>
+     <!-- FOOTER of th project -->
+     <footer class="Footer">
+        <!-- logo and small text -->
+        <div>
+            <h1 class="Footer-logo">bibbó.</h1>
             <small>Escritório de Arquitetura</small>
         </div>
 
         <!-- nav/icons for the footer section -->
         <ul class="Footer-nav">
-            <li><i class="Footer-i fa-brands fa-instagram"></i></li>
-            <li><i class="Footer-i fa-brands fa-whatsapp"></i></li>
-            <li><i class="Footer-i fa-solid fa-moon"></i></li>
-            <li><i class="Footer-i fa-solid fa-sun"></i></li>
+            <li>
+                <a href="https://www.instagram.com/bibbo.arq/" target="_blank"><i class="Footer-i fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://contate.me/ios/bibboarquitetura" target="_blank"><i class="Footer-i fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="Footer-i fa-solid fa-moon"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="Footer-i fa-solid fa-sun"></i></a>
+            </li>
         </ul>
     </footer>
 </body>
