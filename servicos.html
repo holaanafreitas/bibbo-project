@@ -10,6 +10,7 @@
 
     <!-- style set ups's -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navMobile.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
@@ -23,22 +24,40 @@
 <body>
     <!-- HEADER of the project -->
     <header class="Header">
-        <h1><a class="Header-logo" href="./index.html" style="color: var(--beige);">bibbó.</a></h1>
+        <h1><a class="Header-logo" href="./index.html" style="color: var(--beige)">bibbó.</a></h1>
         
         <!-- nav/menu for the tablet and desktop size -->
         <nav class="Header-nav">
             <ul class="Nav-ul">
-                <li><a class="Nav-a" href="./portfolio.html" target="_self" style="color: var(--beige);">portfólio</a></li>
-                <li><a class="Nav-a" href="./servicos.html" target="_self" style="color: var(--beige);">serviços</a></li>
-                <li><a class="Nav-a" href="./publicacoes.html" target="_self" style="color: var(--beige);">publicações</a></li>
-                <li><a class="Nav-a" href="./sobre.html" target="_self" style="color: var(--beige);">sobre</a></li>
+                <li><a class="Nav-a" href="./portfolio.html" target="_self" style="color: var(--beige)">portfólio</a></li>
+                <li><a class="Nav-a" href="./servicos.html" target="_self" style="color: var(--beige)">serviços</a></li>
+                <li><a class="Nav-a" href="./publicacoes.html" target="_self" style="color: var(--beige)">publicações</a></li>
+                <li><a class="Nav-a" href="./sobre.html" target="_self" style="color: var(--beige)">sobre</a></li>
             </ul>
         </nav>
+        
+        <!-- The overlay -->
+        <div id="myNav" class="Overlay">
 
-        <!-- icons fot the sandw-menu for mobile visualization -->
-        <div class="Header-icons" style="color: var(--beige);">
-            <span><i class="Nav-i fa-solid fa-bars"></i></span>
-            <span><i class="Nav-i fa-solid fa-xmark"></i></span>
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="Overlay-content">
+            <a href="./portfolio.html">portfólio</a>
+            <a href="./servicos.html">serviços</a>
+            <a href="./publicacoes.html">publicações</a>
+            <a href="./sobre.html">sobre</a>
+            </div>
+        
+        </div>
+
+        <!-- icon for the curtain menu for mobile visualization -->
+        <div class="Header-menu">
+            <span onclick="openNav()">
+                <i class="Nav-i fa-solid fa-bars" style="color: var(--beige);"></i>
+            </span>
+            
         </div>
     </header>
     <!-- Content for  the MAIN page -->
@@ -88,11 +107,11 @@
                 <a href="https://contate.me/ios/bibboarquitetura" target="_blank"><i class="Footer-i fa-brands fa-whatsapp"></i></a>
             </li>
             <li>
-                <a href=""><i class="Footer-i fa-solid fa-moon"></i></a>
+                <a href="#" id="Dark-icon"><i class="Footer-i fa-solid fa-moon"></i></a>
             </li>
-            <li>
+            <!-- <li>
                 <a href=""><i class="Footer-i fa-solid fa-sun"></i></a>
-            </li>
+            </li> -->
         </ul>
     </footer>
 </body>

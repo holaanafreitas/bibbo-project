@@ -2,7 +2,10 @@
 
 /*
     HOMEPAGE 
+
+    the mobile menu has it's own css: navMobile.css
 */
+
 .Main-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -22,7 +25,7 @@
     opacity: .8; 
 }
 
-.Item-grid:hover {
+.Item-grid:hover, .Item-grid:focus {
     color: var(--secundary-green);
     opacity: 1;
     scale: 1.05;
@@ -47,7 +50,6 @@ SERVICES PAGE
     border-radius: 5px;
     position: relative;
 
-    z-index: -1;
     margin-top: -120px;
 }
 
@@ -60,7 +62,6 @@ SERVICES PAGE
     gap: 1rem;
 
     margin: 3rem 2rem 3rem 2rem;
-
 }
 
 .Accordion p {
@@ -79,10 +80,13 @@ SERVICES PAGE
     border-radius: 5px;
     box-shadow: 2px 2px 2px var(--primary-green);
     min-width: 360px;
+
+    transition: height 0.5s ease;
+
 }
 
 .Accordion-block.active .Block-text {
-    display: block;
+    max-height: 300px;
 }
 
 .Block-title {
@@ -98,14 +102,15 @@ SERVICES PAGE
 }
 .Block-text {
     color: var(--beige);
-    background-color: var(--secundary-green);
     border-radius: 5px;
-    padding: 1rem;
+    padding: 0 1rem;
     text-align: justify;
+    line-height: 1.3;
 
-    display: none;
+    max-height: 0;
     overflow: hidden;
-    transition: all .5s ease;
+    transition: max-height 0.5s ease;
+
 }
 
 

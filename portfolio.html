@@ -10,8 +10,12 @@
 
     <!-- style set ups's -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navMobile.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- javascript -->
+    <script src="./js/script.js" defer></script>
 
 
     <script src="https://kit.fontawesome.com/8257da8165.js" crossorigin="anonymous"></script>
@@ -31,11 +35,29 @@
                 <li><a class="Nav-a" href="./sobre.html" target="_self">sobre</a></li>
             </ul>
         </nav>
+        
+        <!-- The overlay -->
+        <div id="myNav" class="Overlay">
 
-        <!-- icons fot the sandw-menu for mobile visualization -->
-        <div class="Header-icons">
-            <span><i class="Nav-i fa-solid fa-bars"></i></span>
-            <span><i class="Nav-i fa-solid fa-xmark"></i></span>
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="Overlay-content">
+                <a href="./portfolio.html">portfólio</a>
+                <a href="./servicos.html">serviços</a>
+                <a href="./publicacoes.html">publicações</a>
+                <a href="./sobre.html">sobre</a>
+            </div>
+        
+        </div>
+
+        <!-- icon for the curtain menu for mobile visualization -->
+        <div class="Header-menu">
+            <span onclick="openNav()">
+                <i class="Nav-i fa-solid fa-bars"></i>
+            </span>
+            
         </div>
     </header>
 

@@ -11,12 +11,19 @@
     .Main-grid img{
         border-radius:10px;
     }
+    /* MENU HOMEPAGE */
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
 }
 
 /* Tablet Format */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* header and footer setup's */
-    .Header-icons {
+    .Header-menu {
         display: none;
     }
     .Footer-i {
@@ -45,10 +52,10 @@
 /* Desktop format */
 @media screen and (min-width: 1025px){
     /* Header and footer */
-    .Header-icons {
+    .Header-menu {
         display: none;
     }
-    
+
     .Footer-i {
         transform:scale(1.5);
     }
@@ -70,7 +77,7 @@
     }
 
     .Servico-img {
-        height: 700px;
+        height: 800px;
         width: 600px;
         object-fit: cover;
         border-radius: 5px;
