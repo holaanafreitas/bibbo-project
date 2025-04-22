@@ -1,6 +1,8 @@
 /* responsiveness CSS, this design followed the premiss of Mobile First */
 
-/* Mobile format  */
+/* ------------------
+    Mobile format 
+ ------------------ */
 @media screen and (max-width: 767px) {
     .Nav-a {
         display: none;
@@ -20,7 +22,9 @@
     }
 }
 
-/* Tablet Format */
+/* ----------------
+     Tablet Format 
+ ----------------- */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* header and footer setup's */
     .Header-menu {
@@ -34,8 +38,11 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
-
-    /* service set up */
+    /* Portfolio page */
+    .Main-portfolioTitle {
+        font-size: 40pt;
+    }
+    /* Services page */
     .Servico-img {
         width: 800px;
     }
@@ -47,15 +54,38 @@
     .Accordion-block {
         width: 500px;
     }
+    /* Publicacoes/Midia page */
+    .Main-info {
+        width: 620px;
+        text-align: left;
+    }
+
+
+    /* About/Sobre page */
+    .Main-content{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+
+        /* space for the fist line */
+        text-indent: 40px;
+    }
+    .Main-content p {
+        width: 300px;
+        text-align: justify;
+    }
 }
 
-/* Desktop format */
+/* ------------------
+    Desktop format 
+ ------------------ */
 @media screen and (min-width: 1025px){
+
     /* Header and footer */
     .Header-menu {
         display: none;
     }
-
     .Footer-i {
         transform:scale(1.5);
     }
@@ -66,34 +96,54 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
     }
+    
+    /* Portfolio page */
+    .Main-portfolioTitle {
+        font-size: 50pt;
+    }
 
     /* Services page */
-    .Header-logo, .Nav-a {
-        color: var(--dark-gray) !important;
-    }
 
     .Main-servicos {
         flex-direction: row;
     }
-
     .Servico-img {
         height: 800px;
         width: 600px;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 20px;
         margin: 20px;
     }
-
     .Accordion {
         width: 500px;
     }
-
     .Accordion-block {
         width: 500px;
+    }
+
+    /* Publicacoes/Midia page */
+    .Main-info {
+        width: 700px;
+        text-align: left;
+    }
+    .Main-publi {
+        height: 70vh;
     }
 
     /* About/Sobre page */
     .Main-about {
         flex-direction: row;
+    }
+    .Main-about img {
+        margin-top: 30px;
+        width: 750px;
+        border-radius: 20px;
+    }  
+    .Main-content {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+
+        max-width: 300px;
     }
 }

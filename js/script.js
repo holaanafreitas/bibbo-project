@@ -29,8 +29,8 @@ const darkModeOn = () => {
         darkIcon.classList.remove("fa-moon");
         darkIcon.classList.add("fa-sun");
     } else {
-        darkIcon.classList.add("fa-sun");
-        darkIcon.classList.remove("fa-moon");
+        darkIcon.classList.add("fa-moon");
+        darkIcon.classList.remove("fa-sun");
     }
 
     // Saving in local storage
@@ -38,7 +38,6 @@ const darkModeOn = () => {
 };
 
 // Creating the click event
-
 darkIcon.addEventListener('click', () => {
     darkModeOn();
 })
@@ -50,6 +49,25 @@ if (savedTheme === 'dark') {
     darkIcon.classList.add('fa-sun');
 }
 
+// ---------------------------------
+//          PORTFOLIO PAGE
+// ---------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll('.Carrousel-img');
+    let index = 0;
+
+    // to make sure the fisrt image will appear
+    if (images.length > 0) {
+      images[0].classList.add('active');
+    }
+
+    setInterval(() => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 3000);
+  });
 
 
 // ---------------------------------
@@ -74,3 +92,32 @@ title.forEach((eachTitle, i) => {
     })
 })
 
+// ---------------------------------
+//          MENU ACTIVE PAGE
+// ---------------------------------
+
+// Naming the const's
+const navLinks = document.querySelectorAll(".Nav-a, .Overlay-content a");
+const currentPage = window.location.pathname;
+
+// Creating eventListeners
+document.addEventListener("DOMContentLoaded", markActiveLink);
+
+// Calling the function
+
+function markActiveLink () {
+  navLinks.forEach (link => {
+    const href = link.getAttribute("href");
+
+    // found a problem with the use of "./", but i didn't want to remove it, as the teacher taught in class
+    const hrefClean = href.replace("./", "");
+    const pathAtual = currentPage.split("/").pop(); 
+
+    //to toggle the active class
+    if (pathAtual === hrefClean) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}

@@ -1,43 +1,75 @@
 /* Main CSS style for the website */
 
-/*
+/* ---------------------
     HOMEPAGE 
-
-    the mobile menu has it's own css: navMobile.css
+    ---------------------
+    the mobile curtain menu has it's own css: navMobile.css
 */
 
 .Main-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
+    gap: 20px; 
 
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
 .Main-grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
-
 .Item-grid {
     transition: ease 1s;
-    color: var(--secundary-green);
     opacity: .8; 
 }
-
 .Item-grid:hover, .Item-grid:focus {
     color: var(--secundary-green);
     opacity: 1;
     scale: 1.05;
 }
 
-/* 
+/* ---------------------
     PORTFOLIO PAGE 
-*/
+ ---------------------*/
 
-/* 
-SERVICES PAGE 
-*/
+ .Main-portfolioTitle {
+    color: var(--primary-green);
+    align-self: center;
+    font-size: 30pt;
+    z-index: 1;
+}
+.Main-carrousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+.Carrousel-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 20px;
+    
+}
+.Carrousel-img.active {
+    opacity: 0.5;
+}
+
+/* ---------------------
+    SERVICES PAGE 
+ --------------------- */
 
 .Main-servicos {
     display: flex;
@@ -47,10 +79,8 @@ SERVICES PAGE
 }
 .Servico-img {
     width: 100%;
-    border-radius: 5px;
-    position: relative;
-
-    margin-top: -120px;
+    /* position: relative;
+    margin-top: -200px; */
 }
 
 /* Accordion set up */
@@ -63,11 +93,9 @@ SERVICES PAGE
 
     margin: 3rem 2rem 3rem 2rem;
 }
-
 .Accordion p {
     text-align: justify;
 }
-
 .Accordion-title {
     font-family: 'GutonSemBd';
     font-size: 22pt;
@@ -84,11 +112,9 @@ SERVICES PAGE
     transition: height 0.5s ease;
 
 }
-
 .Accordion-block.active .Block-text {
     max-height: 300px;
 }
-
 .Block-title {
     font-family: 'Montserrat';
     font-size: 15pt;
@@ -113,25 +139,101 @@ SERVICES PAGE
 
 }
 
-
-
-/* 
+/* ---------------------
     MIDIA/PUBLICAÇOES 
-*/
+ --------------------- */
+ 
+.Main-publi {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+.Main-info {
+    width: 300px;
+    padding: 0 20px;
+}
+.Publi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.Publi-a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.Publi-insta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--secundary-green);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 
-/* 
+    width: 100%;
+    height: 100%;
+}
+.Publi-insta:hover {
+    transform: scale(1.02);
+}
+.Publi-title {
+    font-family: 'GutonSemBd','Times New Roman', Times, serif;
+    font-size: 18pt;
+    font-weight: normal;
+    padding-bottom: 10px;
+
+    color: var(--primary-green);
+}
+.Publi-subTitle {
+    font-family: 'GutonSemBd','Times New Roman', Times, serif;
+    font-size: 16pt;
+    padding: 10px 10px;
+    font-weight: normal;
+    color: var(--beige);
+}
+.Publi-descr {
+    font-size: 10pt;
+    text-align: justify;
+    line-height: 18px;
+}
+
+/* ---------------------
     ABOUT PAGE 
-*/
+ --------------------- */
 .Main-about {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
 
-    gap: 20px;
+    gap: 30px;
 }
-
 .Main-about img {
+    width: 100vw;
+    position: relative;
+
+    margin-top: -120px;
+}
+.Main-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
     width: 300px;
-    border-radius: 300px;
+    text-align: justify;
+
+    /* space for the fist line */
+    text-indent: 40px;
+}
+.Content-title {
+    font-family: 'SeptemberSpirit';
+    font-size: 40pt;
+    font-weight: normal;
+    color: var(--primary-green);
 }

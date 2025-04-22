@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibbó Arquitetura</title>
+    <title>Bibbó|Serviços</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon-32x32.png">
@@ -24,15 +24,15 @@
 <body>
     <!-- HEADER of the project -->
     <header class="Header">
-        <h1><a class="Header-logo" href="./index.html" style="color: var(--beige)">bibbó.</a></h1>
+        <h1><a class="Header-logo" href="./index.html" onclick="">bibbó.</a></h1>
         
         <!-- nav/menu for the tablet and desktop size -->
         <nav class="Header-nav">
             <ul class="Nav-ul">
-                <li><a class="Nav-a" href="./portfolio.html" target="_self" style="color: var(--beige)">portfólio</a></li>
-                <li><a class="Nav-a" href="./servicos.html" target="_self" style="color: var(--beige)">serviços</a></li>
-                <li><a class="Nav-a" href="./publicacoes.html" target="_self" style="color: var(--beige)">publicações</a></li>
-                <li><a class="Nav-a" href="./sobre.html" target="_self" style="color: var(--beige)">sobre</a></li>
+                <li><a class="Nav-a" href="./portfolio.html" target="_self">portfólio</a></li>
+                <li><a class="Nav-a" href="./servicos.html" target="_self">serviços</a></li>
+                <li><a class="Nav-a" href="./publicacoes.html" target="_self">publicações</a></li>
+                <li><a class="Nav-a" href="./sobre.html" target="_self">sobre</a></li>
             </ul>
         </nav>
         
@@ -44,10 +44,10 @@
         
             <!-- Overlay content -->
             <div class="Overlay-content">
-            <a href="./portfolio.html">portfólio</a>
-            <a href="./servicos.html">serviços</a>
-            <a href="./publicacoes.html">publicações</a>
-            <a href="./sobre.html">sobre</a>
+                <a href="./portfolio.html">portfólio</a>
+                <a href="./servicos.html">serviços</a>
+                <a href="./publicacoes.html">publicações</a>
+                <a href="./sobre.html">sobre</a>
             </div>
         
         </div>
@@ -55,11 +55,12 @@
         <!-- icon for the curtain menu for mobile visualization -->
         <div class="Header-menu">
             <span onclick="openNav()">
-                <i class="Nav-i fa-solid fa-bars" style="color: var(--beige);"></i>
+                <i class="Nav-i fa-solid fa-bars"></i>
             </span>
             
         </div>
     </header>
+    
     <!-- Content for  the MAIN page -->
     <main>
         <section class="Main-servicos">
@@ -90,7 +91,7 @@
         </section>
     </main>
 
-    <!-- FOOTER of th project -->
+    <!-- FOOTER of the project -->
     <footer class="Footer">
         <!-- logo and small text -->
         <div>
@@ -107,11 +108,13 @@
                 <a href="https://contate.me/ios/bibboarquitetura" target="_blank"><i class="Footer-i fa-brands fa-whatsapp"></i></a>
             </li>
             <li>
-                <a href="#" id="Dark-icon"><i class="Footer-i fa-solid fa-moon"></i></a>
+                <a href="https://www.linkedin.com/company/bibbó-arquitetura-e-interiores"><i class="Footer-i fa-brands fa-linkedin-in"></i></a>
             </li>
-            <!-- <li>
-                <a href=""><i class="Footer-i fa-solid fa-sun"></i></a>
-            </li> -->
+            <li>
+                <a href="#" id="Nav-dark">
+                    <i class="Footer-i fa-solid fa-moon" id="Dark-icon"></i>
+                </a>
+            </li>
         </ul>
     </footer>
 </body>

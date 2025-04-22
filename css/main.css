@@ -94,7 +94,6 @@ p {
 
     transition: ease .5s;
 }
-
 .Header-logo:hover {
     color: var(--primary-green);
 }
@@ -115,12 +114,22 @@ p {
 
 }
 
+/* Nav active page sets */
+.Nav-a.active {
+    color: var(--primary-green);
+    border-bottom: 1px solid var(--primary-green);
+}
+
+.active > a{
+    color: var(--primary-green);
+}
+
 .Nav-a:hover, .Nav-i:hover {
     color: var(--primary-orange);
 
 }
 
-/* nav fot mobile  */
+/* nav for mobile  */
 .Header-menu {
     position: relative;
 }
@@ -130,6 +139,7 @@ p {
     top: -1rem;
     right: 1rem;
     scale: 1.8;
+    color: var(--dark-gray);
 }
 
 /* footer css */
@@ -147,7 +157,9 @@ p {
     color: var(--primary-orange);
 }
 
-/* css fot DARKMODE */
+
+
+/* css for DARKMODE */
 
 body.Dark-mode {
     background-color: var(--dark-gray);
@@ -156,7 +168,8 @@ body.Dark-mode {
 
 body.Dark-mode .Header-logo, 
 body.Dark-mode .Nav-a, 
-body.Dark-mode .Nav-i {
+body.Dark-mode .Nav-i,
+body.Dark-mode .Main-portfolioTitle {
     color: var(--beige) !important;
 }
 
