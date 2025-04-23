@@ -169,7 +169,11 @@ body.Dark-mode {
 body.Dark-mode .Header-logo, 
 body.Dark-mode .Nav-a, 
 body.Dark-mode .Nav-i,
-body.Dark-mode .Main-portfolioTitle {
+body.Dark-mode .Main-portfolioTitle,
+body.Dark-mode .Project-description h1,
+body.Dark-mode .Project-description p,
+body.Dark-mode .Project-ficha h2,
+body.Dark-mode .Project-ficha ul {
     color: var(--beige) !important;
 }
 

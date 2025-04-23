@@ -42,6 +42,16 @@
     .Main-portfolioTitle {
         font-size: 40pt;
     }
+
+    .Main-projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        max-width: 700px;
+    }   
+
+
     /* Services page */
     .Servico-img {
         width: 800px;
@@ -96,12 +106,14 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
     }
-    
+
     /* Portfolio page */
     .Main-portfolioTitle {
         font-size: 50pt;
     }
-
+    .Main-projects {
+        flex-direction: row;
+    }
     /* Services page */
 
     .Main-servicos {
@@ -146,4 +158,12 @@
 
         max-width: 300px;
     }
+
+    /* projects page */
+    .Project-cover img {
+        width: 1350px;
+        height: 800px;
+        object-fit: cover;
+    }
+
 }
