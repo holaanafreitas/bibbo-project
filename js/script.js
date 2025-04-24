@@ -123,7 +123,24 @@ function markActiveLink () {
 }
 
 // ---------------------------------
-//      ZOOM ON PROJECT PAGE
+//      FORM SUBSCRIPTION ALERT
 // ---------------------------------
+
+
+const btnSubscribe = document.getElementById("btnNewsletter");
+const msgSubs = document.getElementById("msgSubs");
+
+btnSubscribe.addEventListener('click', e => {
+  e.preventDefault()
+  // msg for the subscription since there is no backend
+  const email = document.getElementById("email").value;
+
+  if (email.trim() === ""){
+    msgSubs.innerText = "Por favor, insira um e-mail válido."
+  } else {
+    msgSubs.innerText = "Email inscrito! Obrigada (:"
+  }
+})
+
 
 

@@ -5,7 +5,12 @@
     ---------------------
     the mobile curtain menu has it's own css: navMobile.css
 */
-
+.Main-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .Main-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -30,6 +35,39 @@
     color: var(--secundary-green);
     opacity: 1;
     scale: 1.05;
+}
+
+/* newsletter section */
+.Main-newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2em 2em;
+
+}
+
+.Main-newsletter h2 {
+    color: var(--primary-orange);
+}
+.Main-newsletter p {
+    width: 350px;
+    text-align: center;
+}
+.Newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 350px;
+}
+.Newsletter-form input,
+.Newsletter-form button {
+    padding: 0.5em;
+    border: 1px solid var(--secundary-green);
+    border-radius: 6px;
+    font-size: 1em;
+    width: 350px;
 }
 
 /* ---------------------
