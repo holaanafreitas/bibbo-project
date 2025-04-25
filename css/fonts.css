@@ -1,0 +1,25 @@
+/* Titles and logo fonts (came with the font download): GUTON */
+
+@font-face {
+    font-family: 'GutonSemBd';
+    src: url('../assets/gutonFont/Guton-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Font for the paragraphs: MONTSERRAT */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/montserratFont/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* special caracters font: SEPTEMBER SPIRITS */
+@font-face {
+    font-family: 'SeptemberSpirit';
+    src: url('../assets/septemberFont/SeptemberSpirit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+@import url("./fonts.css");
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,6 +21,7 @@ body {
 
 a, i, ul, li, h1 {
     color: var(--dark-gray);
+    text-decoration: none;
 }
 
 main {
@@ -42,35 +45,6 @@ main {
     background-color: #E6DED3;
 }
 
-/* Titles and logo fonts (came with the font download): GUTON */
-
-@font-face {
-    font-family: 'GutonSemBd';
-    src: url('../assets/gutonFont/Guton-SemiBold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-
-/* Font for the paragraphs: MONTSERRAT */
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/montserratFont/Montserrat-VariableFont_wght.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* special caracters font: SEPTEMBER SPIRITS */
-@font-face {
-    font-family: 'SeptemberSpirit';
-    src: url(../assets/septemberFont/SeptemberSpirit.ttf) format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-p {
-    font-family: 'Montserrat', monospace;
-}
-
 /* header and footer equal css */
 .Header, .Footer {
     display: flex;
@@ -82,9 +56,10 @@ p {
 }
 
 .Logo {
-    font-family: 'GutonSemBd', monospace;
+    /* font-family: 'GutonSemBd', monospace; */
     font-size: 28pt;
     text-decoration: none;
+    color: var(--dark-gray);
     transition: ease .5s;
 }
 .Logo:hover {
