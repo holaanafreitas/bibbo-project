@@ -1,10 +1,7 @@
-/* Main CSS style for the website */
 
 /* ---------------------
-    HOMEPAGE 
-    ---------------------
-    the mobile curtain menu has it's own css: navMobile.css
-*/
+         HOMEPAGE 
+    ---------------------*/
 .Main-home {
     display: flex;
     flex-direction: column;
@@ -50,9 +47,11 @@
 
 .Main-newsletter h2 {
     color: var(--primary-orange);
+    text-align: center;
+
 }
 .Main-newsletter p {
-    width: 350px;
+    width: 300px;
     font-size: 11pt;
     text-align: center;
 }
@@ -68,7 +67,7 @@
     border: 1px solid var(--secundary-green);
     border-radius: 6px;
     font-size: 1em;
-    width: 350px;
+    width: 300px;
 
     text-align: center;
 }
@@ -79,10 +78,8 @@
 .Main-portf {
     display: flex;
     flex-direction: column;
-
 }
  .Main-portfolioTitle {
-    color: var(--primary-green);
     align-self: center;
     font-size: 30pt;
     z-index: 1;
@@ -106,7 +103,6 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
     border-radius: 20px;
-    
 }
 .Carrousel-img.active {
     opacity: 0.5;
@@ -153,8 +149,6 @@
     padding: 10px;
     object-fit: cover;
     border-radius: 20px;
-
-    /* padding: 1em 1em; */
 }
 
 /* ---------------------
@@ -187,7 +181,7 @@
     text-align: justify;
 }
 .Accordion-title {
-    font-family: 'GutonSemBd';
+    font-family: 'GutonSemBd', monospace;
     font-size: 22pt;
     color: var(--primary-green);
     
@@ -206,13 +200,11 @@
     max-height: 300px;
 }
 .Block-title {
-    font-family: 'Montserrat';
     font-size: 15pt;
     font-weight: normal;
     text-align: left;
     color: var(--beige);
     padding: 1rem 0 1rem 1rem;
-    
     background-color: var(--primary-green);
 
 }
@@ -226,7 +218,6 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
-
 }
 
 /* ---------------------
@@ -277,7 +268,6 @@
     font-size: 18pt;
     font-weight: normal;
     padding-bottom: 10px;
-
     color: var(--primary-green);
 }
 .Publi-subTitle {
@@ -301,20 +291,17 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-
     gap: 30px;
 }
 .Main-about img {
     width: 100vw;
     position: relative;
-
     margin-top: -120px;
 }
 .Main-content {
     display: flex;
     flex-direction: column;
     align-self: center;
-
     width: 300px;
     text-align: justify;
 
@@ -329,85 +316,81 @@
 }
 
 /* ---------------------
-     ABOUT PAGE 
+    PROJECT PAGE 
  --------------------- */
 .Main-projectPage {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    color: var(--dark-gray);
 }
   
 /* hero image */
 .Project-cover img {
-width: 100%;
-height: auto;
-object-fit: cover;
-border-radius: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .Project-info {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-gap: 2em;
-padding: 2em 0;
+    gap: 2em;
+    padding: 2em 0;
 }
 
-.Project-description h1 {
-font-size: 2em;
-color: var(--primary-green);
+.Project-description h2 {
+    font-size: 2em;
+    color: var(--primary-green);
 }
 
 .Project-description p {
-line-height: 1.6;
-max-width: 700px;
-color: var(--dark-gray);
-text-align: justify;
+    line-height: 1.6;
+    max-width: 700px;
+    text-align: justify;
 }
 
 .Project-ficha h2 {
-font-size: 1.2em;
-color: var(--primary-green);
-margin-bottom: 0.5em;
+    font-size: 1.2em;
+    color: var(--primary-green);
+    margin-bottom: 0.5em;
 }
 
 .Project-ficha ul {
-list-style: none;
-padding: 0;
+    list-style: none;
 }
 
 .Project-ficha li {
-margin-bottom: 0.5em;
-font-family: 'Montserrat';
+    margin-bottom: 0.5em;
 }
 
 /* gallery */
 .Project-gallery {
-padding-top: 2em;
+    padding-top: 2em;
 }
 
 .Project-gallery h2 {
-font-size: 1.5em;
-color: var(--primary-green);
-margin-bottom: 1em;
+    font-size: 1.5em;
+    color: var(--primary-green);
+    margin-bottom: 1em;
 }
 
 .Gallery-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5em;
 }
 
 .Gallery-grid img {
-width: 100%;
-border-radius: 10px;
-object-fit: cover;
-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-transition: transform 0.3s ease;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
 .Gallery-grid img:hover {
-transform: scale(1.02);
+    transform: scale(1.02);
 }
