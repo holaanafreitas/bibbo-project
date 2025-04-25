@@ -181,7 +181,7 @@
     text-align: justify;
 }
 .Accordion-title {
-    font-family: 'GutonSemBd', monospace;
+    font-family: 'GutonSemBd', 'Montserrat';
     font-size: 22pt;
     color: var(--primary-green);
     

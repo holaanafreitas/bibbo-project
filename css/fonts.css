@@ -1,12 +1,25 @@
 /* Titles and logo fonts (came with the font download): GUTON */
 
+/* Webfont: Guton-SemiBold */
 @font-face {
+    font-family: 'GutonSemBd';
+    src: url('Guton-SemiBold.eot'); /* IE9 Compat Modes */
+    src: url('Guton-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Guton-SemiBold.woff') format('woff'), /* Modern Browsers */
+         url('Guton-SemiBold.woff2') format('woff2'), /* Modern Browsers */
+         url('Guton-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* @font-face {
     font-family: 'GutonSemBd';
     src: url('../assets/gutonFont/Guton-SemiBold.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-}
+} */
 
 /* Font for the paragraphs: MONTSERRAT */
 @font-face {
